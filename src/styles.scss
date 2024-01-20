@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  &.warn {
+    @apply py-2 px-8 rounded-lg font-semibold text-white bg-red-800 hover:bg-red-900 transition;
+  }
+  &.del {
+    @apply py-2 px-8 rounded-lg font-semibold text-white bg-black hover:bg-black transition;
+  }
+}
+
+
+.card {
+  @apply rounded-lg shadow bg-white p-4 mb-4 md:mb-6 border hover:bg-slate-50 transition;
+}
+
+.wrapper {
+  @apply p-4 md:p-10 mx-auto max-w-[40rem];
+}
+
+input, textarea {
+  @apply border min-h-10 rounded-lg shadow w-full mb-6;
+  @apply hover:border-slate-400 focus:bg-slate-50 focus:outline-blue-500;
+}
+
+label {
+  @apply font-medium mb-1;
+}
